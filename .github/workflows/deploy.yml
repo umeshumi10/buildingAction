@@ -10,7 +10,7 @@ jobs:
       - name: Get code
         uses: actions/checkout@v3
       - name: Add Actions
-        uses: ./.github/workflows/actions/cache-deps
+        uses: ./.github/workflows/actions/cache-deps/
       - name: Lint code
         run: npm run lint
   test:
